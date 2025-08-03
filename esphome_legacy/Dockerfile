@@ -1,5 +1,8 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=homeassistant/amd64-base:3.15
 FROM ${BUILD_FROM}
 
-# Ensure we use s6-overlay init as PID 1
-ENTRYPOINT ["/init"]
+# Copy ESPHome runtime from the official image
+COPY --from=ghcr.io/esphome/esphome-hassio:2025.5.0 / /
+
+# Use HA-compatible CMD (bypassing s6-overlay)
+CMD ["/usr/bin/python3", "-m", "esphome", "dashboard", "/config/esphome"]
