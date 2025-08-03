@@ -1,5 +1,12 @@
 {
   "name": "ESPHome Legacy Repo",
   "url": "https://github.com/grantshell-git/esphome-legacy-addon",
-  "maintainer": "Grant Shellborn"
+  "maintainer": "Grant Shellborn",
+  "addons": {
+    "esphome_legacy": {
+      "name": "ESPHome (Legacy 2025.5.0)",
+      "description": "ESPHome add-on pinned to version 2025.5.0 with full pairing support.",
+      "slug": "esphome_legacy"
+    }
+  }
 }
