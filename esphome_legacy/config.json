@@ -1,0 +1,14 @@
+{
+  "name": "ESPHome (Legacy 2025.5.0)",
+  "version": "2025.5.0",
+  "slug": "esphome_legacy",
+  "description": "ESPHome add-on pinned to version 2025.5.0 with full pairing support.",
+  "url": "https://esphome.io",
+  "arch": ["amd64", "armv7", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "image": "ghcr.io/esphome/esphome-hassio:2025.5.0",
+  "ports": {
+    "6052/tcp": 6052
+  }
+}
