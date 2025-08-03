@@ -7,7 +7,7 @@
   "arch": ["amd64", "armv7", "aarch64"],
   "startup": "services",
   "boot": "auto",
-  "image": "ghcr.io/esphome/esphome-hassio:2025.5.0",
+  "image": "ghcr.io/esphome/esphome-hassio",
   "ports": {
     "6052/tcp": 6052
   }
